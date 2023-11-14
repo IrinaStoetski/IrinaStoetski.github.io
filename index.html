@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round numbers</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="columns m-4">
+      <div class="column is-flex is-flex-wrap-wrap is-one-third">
+        <label class="mr-2">
+          <input
+            type="text"
+            class="round-input input is-primary is-large"
+            placeholder="Round listings"
+            data-value="listings"
+          />
+        </label>
+        <button class="round-btn button is-large" data-target="listings">
+          Round
+        </button>
+        <div
+          class="result mt-2 has-text-weight-bold"
+          id="listings-result"
+        ></div>
+      </div>
+      <div class="column is-flex is-flex-wrap-wrap is-one-third">
+        <label class="mr-2">
+          <input
+            type="text"
+            class="round-input input is-primary is-large"
+            placeholder="Round communities"
+            data-value="communities"
+          />
+        </label>
+        <button class="round-btn button is-large" data-target="communities">
+          Round
+        </button>
+        <div
+          class="result mt-2 has-text-weight-bold"
+          id="communitites-result"
+        ></div>
+      </div>
+      <div class="column is-flex is-flex-wrap-wrap is-one-third">
+        <label class="mr-2">
+          <input
+            type="text"
+            class="round-input input is-primary is-large"
+            placeholder="Round builders"
+            data-value="builders"
+          />
+        </label>
+        <button class="round-btn button is-large" data-target="builders">
+          Round
+        </button>
+        <div
+          class="result mt-2 has-text-weight-bold"
+          id="builders-result"
+        ></div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
