@@ -7,9 +7,9 @@ const roundBuilders = (count) => {
 };
 
 const roundCommunities = (count) => {
-  if (count < 200) {
+  if (count < 300) {
     return round(count, 10);
-  } else if (count >= 200 && count < 1000) {
+  } else if (count >= 300 && count < 1000) {
     return round(count, 50);
   } else if (count >= 1000) {
     return round(count, 100);
