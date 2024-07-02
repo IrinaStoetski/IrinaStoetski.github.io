@@ -1,0 +1,58 @@
+:root {
+  --light-color: #dad3be;
+  --neutral-color: #b7b597;
+  --accent-color: #6b8a7a;
+  --theme-color: #254336;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.movie {
+  border-radius: 16px;
+  border: 1px solid var(--neutral-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 16px;
+}
+
+.movie-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
