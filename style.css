@@ -9,6 +9,11 @@ a {
   color: inherit;
 }
 
+a:hover {
+  transition: all 0.6s;
+  color: var(--accent-color);
+}
+
 body {
   margin: 0;
   background-color: var(--light-color);
@@ -73,11 +78,6 @@ img {
 .movie-director {
   color: var(--theme-color);
   font-weight: 700;
-  transition: all 0.6s;
-}
-
-.movie-link:hover {
-  color: var(--accent-color);
 }
 
 .movie-details {
@@ -96,13 +96,24 @@ img {
   line-height: 36px;
 }
 
+.back-button {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--theme-color);
+  border: none;
+  margin-top: 24px;
+  text-decoration: none;
+}
+
 .lds-dual-ring {
   color: var(--theme-color);
 }
+
 .lds-dual-ring,
 .lds-dual-ring:after {
   box-sizing: border-box;
 }
+
 .lds-dual-ring {
   position: absolute;
   top: 50%;
@@ -110,6 +121,7 @@ img {
   width: 80px;
   height: 80px;
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -121,6 +133,7 @@ img {
   border-color: currentColor transparent currentColor transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
