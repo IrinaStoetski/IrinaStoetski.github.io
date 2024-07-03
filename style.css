@@ -134,4 +134,27 @@ img {
   .content {
     grid-template-columns: 1fr;
   }
+
+  .movie {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .movie-details {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .movie-details-image {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .lds-dual-ring {
+    transform: translate(-50%, -50%);
+  }
 }
