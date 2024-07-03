@@ -1,12 +1,4 @@
-async function getMoviesList() {
-  return await getData(`${BASE_END_POINT}/films`);
-}
-
-// async function getSWPersonById(id) {
-//   const url = `https://www.swapi.tech/api/films${id}`;
-
-//   return await getData(url);
-// }
+const getMoviesList = async () => await getData(`${BASE_END_POINT}/films`);
 
 const getPeopleLinks = (characters) =>
   characters.map((item) => {
@@ -22,7 +14,7 @@ const getMovieCardLayout = (movie) => {
     uid,
     properties: { title, director, opening_crawl },
   } = movie;
-  console.log(movie);
+
   return `<li class="movie" >
            
              <div class="image"> <img src=${imagesMap[uid]} alt="${title} poster image" /></div>

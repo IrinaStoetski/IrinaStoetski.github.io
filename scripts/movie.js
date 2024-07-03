@@ -24,9 +24,9 @@ const getCharactersNames = async (characters) => {
 
 const renderMainContent = async (data, movieId) => {
   const { characters, opening_crawl, release_date } = data;
-  console.log(data);
   const contentElement = document.querySelector(".movie-content");
   const charactersInfo = await getCharactersNames(characters);
+
   contentElement.innerHTML = `
    <div class="movie-details">
     <div class="movie-details-image"> 
